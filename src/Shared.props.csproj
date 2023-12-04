@@ -1,0 +1,30 @@
+<Project>
+	
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>Mindbox</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<SourceDir>$(SolutionDir)src/</SourceDir>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<Using Include="System.ComponentModel.DataAnnotations" />
+		<Using Include="System.Reflection" />
+		<Using Include="System.Text.Json" />
+		<Using Include="System.Text.Json.Serialization" />
+		<Using Include="System.Net" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Static="true" Include="Mindbox.Extensions" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(Shared)' == ''">
+		<ProjectReference Include="$(SourceDir)Shared/Shared.csproj" />
+	</ItemGroup>
+	
+</Project>

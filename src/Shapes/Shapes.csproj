@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="$(SolutionDir)src/Shared.props.csproj" />
+
+	<PropertyGroup>
+		<ProjectName>Mindbox.Shapes</ProjectName>
+		<RootNamespace>Mindbox.Shapes</RootNamespace>
+		<AssemblyName>$(ProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+</Project>

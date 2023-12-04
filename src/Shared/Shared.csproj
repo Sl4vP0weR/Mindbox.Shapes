@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Shared>true</Shared>
+	</PropertyGroup>
+	
+	<Import Project="$(SolutionDir)src/Shared.props.csproj" />
+
+	<PropertyGroup>
+		<ProjectName>Mindbox.Shared</ProjectName>
+		<AssemblyName>$(ProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+</Project>
